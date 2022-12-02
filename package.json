@@ -1,0 +1,12 @@
+{
+  "name": "@masa-finance/masa-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:masa-finance/masa-example.git",
+  "author": "Sebastian Gerske <13647606+H34D@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@masa-finance/masa-sdk": "^0.5.6",
+    "make-runnable": "^1.4.0"
+  }
+}
