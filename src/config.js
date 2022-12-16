@@ -9,7 +9,10 @@ const provider = new ethers.providers.JsonRpcProvider(
 );
 
 const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
-const masa = new Masa({ wallet });
+const masa = new Masa({
+  wallet,
+  apiUrl: "https://test.middleware.masa.finance/",
+});
 
 module.exports = {
   masa,
