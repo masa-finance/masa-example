@@ -32,7 +32,11 @@ async function createCreditScore() {
   await createIdentity();
 
   // create credit score for currently logged-in user
-  await masa.creditScore.create();
+  const { success, message } = await masa.creditScore.create();
+
+  if (!success) {
+    console.error(message);
+  }
 
   // list credit scores for currently logged-in user
   await masa.creditScore.list();
