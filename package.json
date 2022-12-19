@@ -7,6 +7,6 @@
   "license": "MIT",
   "dependencies": {
     "@masa-finance/masa-sdk": "^0.7.9",
-    "make-runnable": "^1.4.0"
+    "make-runnable": "^1.4.1"
   }
 }
