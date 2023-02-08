@@ -344,22 +344,23 @@
     "@ethersproject/properties" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
 
-"@masa-finance/masa-contracts-identity@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@masa-finance/masa-contracts-identity/-/masa-contracts-identity-0.5.0.tgz#3d680b255d9ea9af4acad766e97e2e9c3f6f9196"
-  integrity sha512-u/Hd3sQhCwsKo4v1b632wjU6NABPVvp4JySOzQ7f6mEBLtN4WjcFW4Nybb5G7NsD6Z4TeDjxxvzMgyY30y90bQ==
+"@masa-finance/masa-contracts-identity@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@masa-finance/masa-contracts-identity/-/masa-contracts-identity-1.1.5.tgz#457902e2901336a28aa1cfd7405ebd41908a3b25"
+  integrity sha512-3zpeQaB2M2dyk1rWbJCpJ0ClXIpoi0Gfu+zjmn8J3qdV/2x9A7vAfclQw6G2xY1ILTfwMTkV4J/6XBHul4sR2Q==
   dependencies:
     ethers "^5.6.9"
 
-"@masa-finance/masa-sdk@^0.7.9":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@masa-finance/masa-sdk/-/masa-sdk-0.7.9.tgz#9eccbd97f02a29e21f32d994557e25256534cfb8"
-  integrity sha512-Z2eL7U4VPJW49/tMLLOP4yOYA1pCc3HfegCiK0iJW2v+WCxctGPVGbLq/hUru2z7Q+3MCZqJqm7cBt+oDbCj1A==
+"@masa-finance/masa-sdk@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@masa-finance/masa-sdk/-/masa-sdk-1.2.3.tgz#21fe6ef5a3a0c371a99bfc19252f0edb21232ca1"
+  integrity sha512-bI7tROVnS5YQBvGXNxEtJBCPNm7RvQgWYQhZs/lE0WXrzwRI7HGDCC4PtdwHHrE6bZRv5sjXMzh2eTW4YGDE+Q==
   dependencies:
-    "@masa-finance/masa-contracts-identity" "^0.5.0"
-    arweave "^1.11.6"
-    axios "1.1.0"
+    "@masa-finance/masa-contracts-identity" "^1.1.5"
+    arweave "~1.11.8"
+    axios "^1.3.2"
     ethers "^5.7.2"
+    grapheme-splitter "^1.0.4"
     typescript "^4.2.3"
 
 aes-js@3.0.0:
@@ -386,7 +387,7 @@ arconnect@^0.4.2:
   dependencies:
     arweave "^1.10.13"
 
-arweave@^1.10.13, arweave@^1.11.6:
+arweave@^1.10.13, arweave@~1.11.8:
   version "1.11.8"
   resolved "https://registry.yarnpkg.com/arweave/-/arweave-1.11.8.tgz#09376e0c6cec40a661cbb27a306cb11c0a663cd8"
   integrity sha512-58ODeNPIC4OjaOCl2bXjKbOFGsiVZFs+DkQg3BvQGvFWNqw1zTJ4Jp01xGUz+GbdOaDyJcCC0g3l0HwdJfFPyw==
@@ -418,15 +419,6 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-axios@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.1.0.tgz#94d25e6524743c7fc33954dd536687bbb957793a"
-  integrity sha512-hsJgcqz4JY7f+HZ4cWTrPZ6tZNCNFPTRx1MjRqu/hbpgpHdSCUpLVuplc+jE/h7dOvyANtw/ERA3HC2Rz/QoMg==
-  dependencies:
-    follow-redirects "^1.15.0"
-    form-data "^4.0.0"
-    proxy-from-env "^1.1.0"
-
 axios@^0.27.2:
   version "0.27.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
@@ -434,6 +426,15 @@ axios@^0.27.2:
   dependencies:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
+
+axios@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.3.2.tgz#7ac517f0fa3ec46e0e636223fd973713a09c72b3"
+  integrity sha512-1M3O703bYqYuPhbHeya5bnhpYVsDDRyQSabNja04mZtboLNSuZ4YrltestrLXfHgmzua4TpUqRiVKbiQuo2epw==
+  dependencies:
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 base64-js@^1.5.1:
   version "1.5.1"
@@ -616,6 +617,11 @@ gopd@^1.0.1:
   integrity sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==
   dependencies:
     get-intrinsic "^1.1.3"
+
+grapheme-splitter@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
+  integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
 
 has-symbols@^1.0.2, has-symbols@^1.0.3:
   version "1.0.3"
