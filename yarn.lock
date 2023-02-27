@@ -344,24 +344,30 @@
     "@ethersproject/properties" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
 
-"@masa-finance/masa-contracts-identity@^1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@masa-finance/masa-contracts-identity/-/masa-contracts-identity-1.1.5.tgz#457902e2901336a28aa1cfd7405ebd41908a3b25"
-  integrity sha512-3zpeQaB2M2dyk1rWbJCpJ0ClXIpoi0Gfu+zjmn8J3qdV/2x9A7vAfclQw6G2xY1ILTfwMTkV4J/6XBHul4sR2Q==
+"@masa-finance/masa-contracts-identity@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@masa-finance/masa-contracts-identity/-/masa-contracts-identity-1.2.1.tgz#29ef898dc8028b90cb5086ba2fd08c214e46634c"
+  integrity sha512-3vqZXkOBPfGIg7YIvL/3b4K1hiWAcgcWmG46NYWsgOtWypMcoYzL+z5+ik2Ag2iSxjX/kPZaAaajDlpMyW6/ig==
   dependencies:
-    ethers "^5.6.9"
+    ethers "~5.7.2"
 
-"@masa-finance/masa-sdk@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@masa-finance/masa-sdk/-/masa-sdk-1.2.3.tgz#21fe6ef5a3a0c371a99bfc19252f0edb21232ca1"
-  integrity sha512-bI7tROVnS5YQBvGXNxEtJBCPNm7RvQgWYQhZs/lE0WXrzwRI7HGDCC4PtdwHHrE6bZRv5sjXMzh2eTW4YGDE+Q==
+"@masa-finance/masa-sdk@^1.5.6":
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/@masa-finance/masa-sdk/-/masa-sdk-1.5.6.tgz#0445312b2a14519c1b957eb975f45217acd41af2"
+  integrity sha512-oAdJYowlSCR8mJ0BRn7mlidCZBci8czti33BykCGAHlV6OI2vz1oKHSNnFd7sMto226iv1GdMQx2lZGo7kSFaw==
   dependencies:
-    "@masa-finance/masa-contracts-identity" "^1.1.5"
-    arweave "~1.11.8"
+    "@masa-finance/masa-contracts-identity" "^1.2.1"
+    "@masa-finance/masa-token" "^1.0.0"
+    arweave "~1.12.6"
     axios "^1.3.2"
-    ethers "^5.7.2"
+    ethers "~5.7.2"
     grapheme-splitter "^1.0.4"
     typescript "^4.2.3"
+
+"@masa-finance/masa-token@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@masa-finance/masa-token/-/masa-token-1.0.0.tgz#9a9dfb5d446a8a96c39c56a9a1ec9435906f1179"
+  integrity sha512-1T7HEAe1CzoP6L29Glxabqw1rz379KV92txTtvBkl03CNxJNWop1SwdXLOHrL82eaKg9Unr3V6x8kwdLpI0QGw==
 
 aes-js@3.0.0:
   version "3.0.0"
@@ -387,7 +393,7 @@ arconnect@^0.4.2:
   dependencies:
     arweave "^1.10.13"
 
-arweave@^1.10.13, arweave@~1.11.8:
+arweave@^1.10.13:
   version "1.11.8"
   resolved "https://registry.yarnpkg.com/arweave/-/arweave-1.11.8.tgz#09376e0c6cec40a661cbb27a306cb11c0a663cd8"
   integrity sha512-58ODeNPIC4OjaOCl2bXjKbOFGsiVZFs+DkQg3BvQGvFWNqw1zTJ4Jp01xGUz+GbdOaDyJcCC0g3l0HwdJfFPyw==
@@ -398,6 +404,16 @@ arweave@^1.10.13, arweave@~1.11.8:
     base64-js "^1.5.1"
     bignumber.js "^9.0.2"
     util "^0.12.4"
+
+arweave@~1.12.6:
+  version "1.12.7"
+  resolved "https://registry.yarnpkg.com/arweave/-/arweave-1.12.7.tgz#41a84660dfdd19d52a94cc6312e62db7b669d9f8"
+  integrity sha512-zgw5hcAjyNEH4X7JgkQ3AizK3voFn4fhCUyM9cqOC/kFN9ib33U/1wMfSkK+Uod5y9y2laAkxi4TPDJNC3U+QA==
+  dependencies:
+    arconnect "^0.4.2"
+    asn1.js "^5.4.1"
+    base64-js "^1.5.1"
+    bignumber.js "^9.0.2"
 
 asn1.js@^5.4.1:
   version "5.4.1"
@@ -535,7 +551,7 @@ escalade@^3.1.1:
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
 
-ethers@^5.6.9, ethers@^5.7.2:
+ethers@~5.7.2:
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.7.2.tgz#3a7deeabbb8c030d4126b24f84e525466145872e"
   integrity sha512-wswUsmWo1aOK8rR7DIKiWSw9DbLWe6x98Jrn8wcTflTVvaXhAMaB5zGAXy0GYQEQp9iO1iSHWVyARQm11zUtyg==
