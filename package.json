@@ -6,7 +6,7 @@
   "author": "Sebastian Gerske <13647606+H34D@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "@masa-finance/masa-sdk": "^1.6.4",
+    "@masa-finance/masa-sdk": "^1.6.5",
     "make-runnable": "^1.4.1"
   }
 }
